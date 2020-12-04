@@ -51,13 +51,10 @@ function start(question, answer)
   }
 }
 
-
-
 for(var i=0; i<qna.length;i++)
   {
     start(qna[i].question, qna[i].answer);
   }
-
 
 console.log(chalk.green.bold("Your final score is: ") + chalk.yellow.bold(score));
 console.log("");
