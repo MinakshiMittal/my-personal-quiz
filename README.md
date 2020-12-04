@@ -1,9 +1,9 @@
-# My personal quiz
+# MY PERSONAL QUIZ
  
  This is a quiz which I would like to play with friends to know how much they know me.
 
 There are 5 questions in total.
-# important instruction
+# Important Instruction
 1. You need to start the quiz by clicking on the link in the about section and then when the site gets loaded click on the "play" button in the right-bottom.
 2. First you need to enter your name.
 3. Questions will appear one by one. You need to type your answer.
