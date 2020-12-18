@@ -14,28 +14,34 @@ var highscore = [{
   score: 5,
 }];
 
-var qna = [{
-  question: "What's her age? ",
-  answer: "21",
-},{
-  question: "Is Sherlock her favourite character? ",
-  answer: "yes",
-},{
-  question: "In which city she lives? ",
-  answer: "Ranchi",
-},{
-  question: "Her favourite genre is mystery or romance? ",
-  answer: "mystery",
-},{
-  question: "A strong girl or very sensitive or both? ",
-  answer: "both",
-}];
+var qna = [
+{
+  question: "What is Minakshi's nickname?\na.Minky \nb.Milky \nc.Mickey",
+  answer: "b",
+},
+{
+  question: "What's her age?\na.21\nb.25\nc.19",
+  answer: "a",
+},
+{
+  question: "Who is Minakshi's favourite cricketer? \na.Virat Kohli \nb.M.S. Dhoni \nc.Rohit Sharma",
+  answer: "b",
+},
+{
+  question: "In which city she lives?\na.Ranchi\nb.Hyderabad\nc.Bangalore ",
+  answer: "a",
+},
+{
+  question: "Where she loves going to? \na.Trekking \nb.Beach \nc.Park",
+  answer: "b"
+}
+]
 
 var score = 0;
 
 function start(question, answer)
 {
-  var userAns = readlineSync.question(chalk.yellow.bold(question));
+  var userAns = readlineSync.question(chalk.yellow.bold(question + chalk.white.bold("\nAns:")));
 
   if(userAns === answer)
   {
@@ -55,6 +61,7 @@ for(var i=0; i<qna.length;i++)
   {
     start(qna[i].question, qna[i].answer);
   }
+
 
 console.log(chalk.green.bold("Your final score is: ") + chalk.yellow.bold(score));
 console.log("");
